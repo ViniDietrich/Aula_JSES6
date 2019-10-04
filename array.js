@@ -108,7 +108,34 @@ frutas.map((index, frutas) => {
 });
 */
 
+/*
 const idades = [28,34,[35,60,70,40]];
 
 console.log();
+*/
 
+const idades = [28,34,35,60,70,40];
+
+const old = idades.map(value => [value * 2]);
+
+console.log(old)
+
+const oldIterator = old.keys();
+
+console.log(oldIterator.next());
+console.log(oldIterator.next());
+console.log(oldIterator.next());
+console.log(oldIterator.next());
+console.log(oldIterator.next());
+console.log(oldIterator.next());
+console.log(oldIterator.next());
+
+const oldIterator1 = old.values();
+
+console.log(oldIterator1.next());
+console.log(oldIterator1.next());
+console.log(oldIterator1.next());
+console.log(oldIterator1.next());
+console.log(oldIterator1.next());
+console.log(oldIterator1.next());
+console.log(oldIterator1.next());
