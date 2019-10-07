@@ -115,7 +115,7 @@ console.log();
 */
 
 const idades = [28,34,35,60,70,40];
-
+/*
 const old = idades.map(value => [value * 2]);
 
 console.log(old)
@@ -139,3 +139,56 @@ console.log(oldIterator1.next());
 console.log(oldIterator1.next());
 console.log(oldIterator1.next());
 console.log(oldIterator1.next());
+*/
+
+const First = idades.find(value => value > 40);
+
+const FirstInd = idades.findIndex(value => value > 34);
+
+console.log(First)
+
+console.log(FirstInd)
+
+const AllBet = idades.filter(value => value > 35)
+
+console.log(AllBet);
+
+const AllIt = idades.indexOf(34)
+
+console.log(AllIt);
+
+const AlliIt = idades.lastIndexOf(34)
+
+console.log(AlliIt);
+
+const AlIt = idades.includes(34)
+
+console.log(AlIt);
+
+const AIt = idades.some(value => value % 2 === 0)
+
+console.log(AIt);
+
+const It = idades.every(value => value % 2 === 0)
+
+console.log(It);
+
+const maiorpmenor = idades.sort()
+
+console.log(maiorpmenor);
+
+const menorpmaior = idades.reverse()
+
+console.log(menorpmaior);
+
+const traco = idades.join('-');
+
+console.log(traco);
+
+const reduce = idades.reduce((total, value) => total + value, 0);
+
+console.log(reduce);
+
+const reduce1 = idades.reduce((total, value) => total + value, 0) / idades.length;
+
+console.log(reduce1);
