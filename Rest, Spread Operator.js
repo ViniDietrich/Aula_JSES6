@@ -74,3 +74,49 @@ const obj2 = {
 };
 
 console.log(obj2)
+
+//Destructuring Assignment
+
+var arra = ['Apple', 'Banana', 'Orange', ['Tomato']];
+
+var apple = arra[0];
+var Banana = arra[1];
+var Orange = arra[2];
+var Tomato = arra[3];
+
+var [apple2, Banana2, Orange2, [Tomato2]] = ['Apple', 'Banana', 'Orange', ['Tomato']];
+
+console.log(Tomato, Tomato2);
+
+var obje = {
+    name: "Vinicius",
+    props: {
+        age: 26,
+        corfavorita: ['black', 'blue']
+    }
+};
+
+var {name} = obje;
+var {
+    props: {age, corfavorita:[cor1,cor2] }
+} = obje;
+
+console.log(name);
+
+console.log(age);
+
+console.log(cor1);
+
+var ar = [{name:'Apple', type: 'fruit'}];
+
+var [{ name:fruitname }] = ar;
+
+console.log(fruitname);
+
+//functions
+
+function sum([a, b] = [0, 0]) {
+    return a + b;
+}
+
+console.log(sum());
