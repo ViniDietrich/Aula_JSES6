@@ -1,0 +1,28 @@
+
+body {
+    background: red; background: rgb(104, 104, 89);
+    margin-left: 25px;
+
+}
+
+header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: blanchedalmond;
+    font-family: fantasy
+}
+
+h2 {
+    font-family: fantasy;
+}
+
+p { 
+    font-size: 18px;
+}
+
+.img_G {
+    margin-bottom: 25px;
+}
